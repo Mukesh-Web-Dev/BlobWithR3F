@@ -1,11 +1,9 @@
-import { OrbitControls } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 import * as THREE from "three";
 
 import vertexShader from "../shaders/vertexSphereShader.glsl?raw";
 import fragmentShader from "../shaders/fragmentSphereShader.glsl?raw";
-import { DecalGeometry } from "three/examples/jsm/Addons.js";
 
 export default function BlobSphere(){
   // This reference will give us direct access to the mesh
